@@ -45,4 +45,47 @@ function moyenne ($n1, $n2, $n3) {
     return $moyenne;
 }
 
+// $tab = [];
+// $tab2 = array(); 
+// $tab[0] = "mathieu"; 
+// $tab2[0] = "Adrar";
+// echo $tab[0]; 
+// $tab3 = ["nom" , "prenom" , "age" ,];
+// $tab3["prenom"] = "Mathieu"; 
+// echo $tab3["prenom"]; 
+
+//tableau indéxé
+$tab2 = [];
+$tab2[0] = 'Adrar';
+$tab2[1] = 'test';
+//parcourir un tableau indéxé
+foreach($tab2 as $value){
+    echo $value.'<br>';
+}
+//tableau associatif
+$tab3 = ['nom' => 'Mithridate','prenom' => '', 'age' => ''];
+$tab3['prenom'] = 'Mathieu';
+$tab3['age'] = 43;
+$tab3['telephone'] = '0601020304';
+//parcourir un tableau associatif (nom de colonne (key) et contenu (value))
+foreach($tab3 as $key => $value){
+    echo 'Le '.$key. ' : '.$value.'<br>';
+}
+
+$tab4 = [5, 11, 8, 22, 36, 42, 3, 78, 1, 29];
+
+function maxValue($tableau){
+    $max=0;
+    foreach ($tableau as $value) {
+        if ($value>$max) {
+            $max = $value;
+        }
+        else {
+        $max= $max;
+    }
+}
+}
+
+echo maxValue($tab4); 
+
 ?>
